@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuncio Audrey Hepburn</title>
+  <style>
+    /* Reset básico */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* Contenedor del anuncio */
+    .ad-banner {
+      position: relative;
+      overflow: hidden;
+      width: 728px;
+      height: 90px;
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px auto 0px;
+      border-radius: 12px;
+    }
+
+    /* Contenido interno del anuncio */
+    .ad-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px 15px 20px;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      color: #fff;
+      gap: 20px;
+    }
+    .ad-content .logo {
+      flex: 0 0 auto;
+      width: 65px;
+      height: 65px;
+    }
+    .ad-content img{
+        width: 65px;
+        height: 65px;
+    }
+    .ad-content .text {
+      flex: 1 1 auto;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .ad-content strong {
+      font-size: 18px;
+    }
+    .ad-content .cta a {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-weight: 550;
+      border-radius: 8px;
+    }
+
+    /* Media query para móviles */
+    @media (max-width: 300px) {
+      .ad-banner {
+        width: 300px;
+        height: 600px;
+      }
+      .ad-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+      }
+      .ad-content .logo {
+        width: 100px;
+        height: 100px;
+      }
+      .ad-content .text {
+        font-size: 16px;
+      }
+      .ad-content .cta a {
+        padding: 12px 20px;
+        font-size: 18px;
+      }
+    }
+</style>
+</head>
+<body>
+<div class="ad-banner">
+    <div class="ad-content">
+        <div class="logo">
+            <img src="imagecompressor/ mirada 2-min.jpg" alt="mirada 2-min.jpg">
+        </div>
+        <div class="text">
+            <strong>Audrey Hepburn</strong><br>
+            El icono que rechazó los códigos de Hollywood y triunfó<br> 
+        </div>
+        <div class="cta">
+            <a href="https://renatabitthoff.github.io/TheIconAudreyHepburn/" target="_blank">Descubrila</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
